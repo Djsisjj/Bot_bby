@@ -56,7 +56,7 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
     fs.writeFileSync(gifPath, response.data);
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     api.changeNickname(`[ ${global.config.PREFIX} ] • ➠${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-    return api.sendMessage("চলে এসেছি আমি ইমন বট তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
+    return api.sendMessage("𝙔𝙤𝙪𝙧 𝘽𝙖𝙗𝙮", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
 <------------------------------>  
 BOT CONNECTED SUCCESFUL !!! 
 
@@ -66,15 +66,15 @@ APPROVAL ALLOW IN THIS GROUP!!!
 <------------------------------>
 AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
 
-DEVELOPER : EMON HAWLADAR
+DEVELOPER : 𝘽𝘼𝘿𝘽𝙊𝙔
 
 🟣Facebook Account Link: 
 
-https://www.facebook.com/EMon.BHai.FACEBOOK
+𝙋𝙊𝙍𝙀 𝘼𝘿𝘿 𝙆𝙊𝙍𝙈𝙐
 
-🔵WHATSAPP NUMBER: wa.me/+8801309991724
+🔵WHATSAPP NUMBER: 𝙐𝙎𝙀 𝙆𝙊𝙍𝙄 𝙉𝘼 
 
-🟢SUPPORT EMAIL: emonhawladar311@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
+🟢SUPPORT EMAIL: 𝙋𝙊𝙍𝙀 𝙆𝙃𝙐𝙇𝙈𝙐`, attachment: fs.createReadStream(gifPath)}, threadID));
   }})
 .catch(error => {
     console.error(error);

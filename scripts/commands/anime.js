@@ -5,7 +5,7 @@ module.exports.config = {
   credits: "EMon-BHai",
   prefix: 'true',
   description: "Random Anime video",
-  category: "Media", 
+  category: "anime", 
   usages: "user", 
   cooldowns: 5,
   dependencies: {

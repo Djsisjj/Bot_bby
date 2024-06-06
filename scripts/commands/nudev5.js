@@ -3,13 +3,13 @@
 * @warn Vui lòng không sửa credits cảm ơn !
 */
 module.exports.config = {
-  name: "nudev5",
+  name: "nudev3",
   version: "1.0.0",
   permssion: 2,
   credits: "CallmeSun",
   description: "Random Ảnh Hot Tw",
   prefix:"true",
-  category: "18+",
+  category: "nsfw",
   usages: "tw",
   cooldowns: 1,
   dependencies: {
@@ -479,7 +479,7 @@ const fs = global.nodemodule["fs-extra"];
       if(money < 0) api.sendMessage("À con lợn này định đập quả lọ đúng không ?",event.threadID,event.messageID)
           else {
    Currencies.setData(event.senderID, options = {money: money - 0})
-   var callback = () => api.sendMessage({body:`𝗡𝗴𝘂̛𝗼̛̀𝗶 𝗧𝗮̀ 𝗗𝗮̂𝗺 𝗟𝘂𝗼̂𝗻 𝗖𝗼́ 𝗤𝘂𝘆̉ 𝗧𝗵𝗲𝗼 𝗦𝗮𝘂 😼\n» 𝗧𝗼̂𝗶 𝗯𝗶𝗲̂́𝘁 𝘁𝗵𝘂̛́ 𝗯𝗮̣𝗻 𝗰𝗮̂̀𝗻 𝗹𝗮̀ 𝗻𝘂̣ 𝗰𝘂̛𝗼̛̀𝗶 𝗻𝗵𝘂̛𝗻𝗴 ... «\n𝗦𝗼̂́ 𝗮̉𝗻𝗵: ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
+   var callback = () => api.sendMessage({body:`Daddy you like it\n» ufffs «\: ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
    }
 };

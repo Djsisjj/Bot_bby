@@ -5,7 +5,7 @@ module.exports.config = {
 	credits: "MrTomXxX",
 	description: "Random nude photo extreme burns eyes 18+",
 	prefix:"true",
-	category: "random-img",
+	category: "18+",
 	usages: "anhnude",
 	cooldowns: 2
 };

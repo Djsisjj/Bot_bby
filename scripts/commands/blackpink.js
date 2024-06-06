@@ -1,10 +1,10 @@
 module.exports.config = {
-  name: "blackpink",
+  name: "bpink",
   version: "1.0.0",
   permssion: 0,
   credits: "MrTomXxX",
   description: "Check the NHS chat information.",
-  prefix:'awto',
+  prefix:'true',
 	category: "Random-IMG",
   usages: "blackpink",
   cooldowns: 1,

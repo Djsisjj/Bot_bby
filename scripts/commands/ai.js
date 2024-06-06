@@ -4,7 +4,7 @@ module.exports.config = {
     permssion: 0,
     credits: "kenlie",
     description: "ask anything",
-    prefix: false,
+    prefix: true,
     category: "ai",
     usages: "[ask]",
     cooldowns: 5,

@@ -2,7 +2,7 @@ module.exports.config = {
   name: "video2",
   version: "0.0.3",
   permission: 2,
-  prefix: 'awto',
+  prefix: "true",
   credits: "Nayan",
   description: "Random video",
   category: "user",

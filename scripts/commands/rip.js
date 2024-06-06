@@ -1,10 +1,11 @@
 module.exports.config = {
 	name: "rip",
 	version: "1.0.0",
-	hasPermssion: 0,
+	permssion: 2,
 	credits: "MrTomXxX",
 	description: "rip meme image",
-	commandCategory: "edit-img",
+	prefix:"true",
+	category: "edit-img",
 	usages: "rip",
 	cooldowns: 5,
 	dependencies: {"fs-extra": "","discord.js": "","discord-image-generation" :"","node-superfetch": ""}

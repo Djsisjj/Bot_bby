@@ -1,11 +1,11 @@
 module.exports.config = {
-  name: "sex",
+  name: "hot",
   version: "1.0.0",
   permission: 2,
   credits: "Nayan",
   description: "Sex pic",
   prefix: true, 
-  category: "user", 
+  category: "18+", 
   usages: "sex",
   cooldowns: 5,
   dependencies: {

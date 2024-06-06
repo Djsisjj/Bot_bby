@@ -1,10 +1,11 @@
 module.exports.config = {
-  name: "panties",
+  name: "pantie",
   version: "1.0.0",
-  hasPermssion: 0,
+  permssion: 2,
   credits: "𝐃𝐚𝐫𝐤 𝐑𝐮𝐥𝐞𝐱 𝐊𝐢𝐧𝐠 𝐀𝐧𝐮𝐩",
   description: "Animie Nude IMG.",
-  commandCategory: "Random-IMG",
+  prefix: "true",
+	category: "Random-IMG",
   usages: "panclose",
   cooldowns: 3,
   dependencies: {

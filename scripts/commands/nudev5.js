@@ -8,6 +8,7 @@ module.exports.config = {
   permssion: 2,
   credits: "CallmeSun",
   description: "Random Ảnh Hot Tw",
+  prefix:"true",
   category: "18+",
   usages: "tw",
   cooldowns: 1,

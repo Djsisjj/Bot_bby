@@ -1,10 +1,11 @@
 module.exports.config = {
 	name: "nsfw",
 	version: "1.0.0",
-	hasPermssion: 0,
+	permssion: 2,
 	credits: "MrTomXxX",
 	description: "Enable and disable the permission to use NSFW commands",
-	commandCategory: "Hệ Thống",
+	prefix:"true",
+	category: "Hệ Thống",
 	cooldowns: 5,
 };
 

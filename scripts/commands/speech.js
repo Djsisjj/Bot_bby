@@ -4,7 +4,7 @@ module.exports = {
      version: "1.0.0",
      permission: 0,
      credits: "NAYAN",
-     prefix: 'awto',
+     prefix: 'true',
      description: "text to voice",
      category: "user",
      usages: "text",

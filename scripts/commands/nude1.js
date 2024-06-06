@@ -3,13 +3,13 @@
 * @warn Please do not edit credits thanks !
 */
 module.exports.config = {
-  name: "nude1",
+  name: "nude",
   version: "1.0.0",
   permssion: 2,
   credits: "MrTomXxX",
   description: "Random Nude Photo Nude is very beautiful and eye-pleasing (Note This is a photo command 18+ Consider Before Using)",
   prefix:"true",
- category: "nsfw",
+ category: "18+",
   usages: "girlnude",
   cooldowns: 5,
   dependencies: {

@@ -3,7 +3,7 @@ module.exports.config = {
     version: "1.0.0",
     permssion: 0,
     credits: "EMon-BHai",
-    prefix: 'awto',
+    prefix: 'true',
     description: "video convert audio",
     category: "user",
     usages: "convert [video]",
@@ -19,7 +19,7 @@ var audioss = []
     var { data } = await axios.get(audio ,{  method: 'GET',  responseType: 'arraybuffer' });
                 fs.writeFileSync(__dirname + "/cache/vdtoau.m4a", Buffer.from(data, 'utf-8'));
   audioss.push(fs.createReadStream(__dirname + "/cache/vdtoau.m4a"));
-    var msg = { body : "───※ ·❆· ※───\n\n[⚜️]→ 𝘼𝙐𝘿𝙄𝙊!!!\n\n───※ ·❆· ※───\n𝙊𝙉𝙒𝙀𝙍 𝘽𝘼𝘿𝘽𝙊𝙔", attachment: audioss}
+    var msg = { body : "───※ ·❆· ※───\n\n✔️]→ 𝘼𝙐𝘿𝙄𝙊!!!\n\n 𝘿𝙊𝙉𝙀", attachment: audioss}
   api.sendMessage(msg, event.threadID, event.messageID)
 } catch(e){
     console.log(e)

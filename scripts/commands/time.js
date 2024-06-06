@@ -3,7 +3,7 @@ module.exports.config = {
 	version: "1.0.3",
 	permission: 0,
 	credits: "EMon-BHai",
-	prefix: 'awto',
+	prefix: 'true',
 	description: "time",
 	category: "user",
 	cooldowns: 5,
@@ -22,7 +22,7 @@ module.exports.run = async function({ api, event, args, Currencies, utils, Users
 	const videoLink = "https://i.imgur.com/SXCMp2s.mp4";
 
 	// Message with video and time
-	const message = `👋 Hi ${name}! Have a nice day!\nIt's now: ${time} 🛎\n\nCheck out this video: ${videoLink}`;
+	const message = `👋 𝙃𝙄 ${name}! 𝙃𝘼𝙑𝙀 𝘼 𝙉𝙄𝘾𝙀 𝘿𝘼𝙔!\nIt's now: ${time} 🛎\n\nCheck out this video: ${videoLink}`;
 
 	// Send message with video link
 	return api.sendMessage(message, event.threadID, event.messageID);

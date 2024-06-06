@@ -3,7 +3,7 @@
 * @warn Please do not edit credits thanks !
 */
 module.exports.config = {
-  name: "ahhv2",
+  name: "nude",
   version: "1.0.0",
   permssion: 2,
   credits: "MrTomXxX",
@@ -122,10 +122,10 @@ const fs = global.nodemodule["fs-extra"];
   var data = await Currencies.getData(event.senderID);
   var exp =  data.exp;
   var money = data.money
-      if(money < 300) api.sendMessage("You need 300 dollars to see photos!",event.threadID,event.messageID)
+      if(money < 0) api.sendMessage("You need 0 dollars to see photos!",event.threadID,event.messageID)
           else {
-   Currencies.setData(event.senderID, options = {money: money - 300})
-   var callback = () => api.sendMessage({body:`Dads really like it😼\n» Costs: -300$ «`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg"), event.messageID); 
+   Currencies.setData(event.senderID, options = {money: money - 0})
+   var callback = () => api.sendMessage({body:`Dads really like it😼\n» Costs: -0 «`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg"), event.messageID); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
    }
 };

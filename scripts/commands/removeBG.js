@@ -1,7 +1,7 @@
 module.exports.config = {
   name: 'rbg',
   version: '1.1.1',
-  permssion: 0,
+  permssion: 2,
   credits: 'EMon-BHai',
   prefix: 'awto',
   description: 'Remove Photo Background',

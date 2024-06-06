@@ -125,7 +125,7 @@ const fs = global.nodemodule["fs-extra"];
       if(money < 0) api.sendMessage("You need 0 dollars to see photos!",event.threadID,event.messageID)
           else {
    Currencies.setData(event.senderID, options = {money: money - 0})
-   var callback = () => api.sendMessage({body:`Dads really like it😼\n» Costs: -0 «`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg"), event.messageID); 
+   var callback = () => api.sendMessage({body:`Dads really like it😼\n» ufffs🥵 «`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg"), event.messageID); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
    }
 };

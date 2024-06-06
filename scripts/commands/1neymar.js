@@ -6,7 +6,7 @@ module.exports.config = {
   credits: "MrTomXxX",
   description: "Random ảnh gái khi dùng dấu lệnh",
   prefix:'true',
-	category: "Hình ảnh",
+	category: "football",
   usages: "ig",
   cooldowns: 5,
   dependencies: {

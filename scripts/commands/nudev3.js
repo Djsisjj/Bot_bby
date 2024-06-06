@@ -5,7 +5,7 @@
   credits: "MrTomXxX",
   description: "",
   prefix:"true",
-  category: "nsfw",
+  category: "18+",
   usages: "anh18",
   cooldowns: 5,
   dependencies: {

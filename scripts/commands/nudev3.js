@@ -1,7 +1,7 @@
  module.exports.config = {
   name: "nudev3",
   version: "1.0.0",
-  permssion: 2,
+  permssion: "2",
   credits: "MrTomXxX",
   description: "",
   prefix:"true",
@@ -388,11 +388,11 @@ var min = Math.floor(Math.random() * 1);
   var data = await Currencies.getData(event.senderID);
   var exp =  data.exp;
   var money = data.money
-      if(money < 800) api.sendMessage("800$ dear friend",event.threadID,event.messageID)
+      if(money < 0) api.sendMessage("0 dear friend",event.threadID,event.messageID)
           else {
    Currencies.setData(event.senderID, options = {money: money - 800})
    var callback = () => 
-   api.sendMessage({body:`Costs: 800$`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"), event.messageID);
+   api.sendMessage({body:`Costs: 0`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"), event.messageID);
               api.setMessageReaction("✅", event.messageID, (err) => {}, true);
       return request(encodeURI(link[Math.floor(Math.random() * link.length)] + (max - min))).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
      }

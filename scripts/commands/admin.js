@@ -1,10 +1,10 @@
 module.exports.config = {
   name: "admin",
   version: "2.0.0",
-  permission: 0,
+  permission: 2,
   credits: "Emon",
   description: "control admin lists",
-  prefix: false,
+  prefix: true,
   category: "admin",
   usages: "admin [add/remove] [uid]",
   cooldowns: 5,

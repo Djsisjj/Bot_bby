@@ -1,9 +1,9 @@
 module.exports.config = {
     name: 'admins',
     version: '1.0.0',
-    permission: 0,
+    permission: 2,
     credits: 'Emon',
-    prefix: false,
+    prefix: true,
     description: 'group administrator list.',
     category: 'without prefix',
     usages: 'admins',

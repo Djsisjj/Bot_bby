@@ -1,7 +1,7 @@
 module.exports.config = {
-    name: "pinterest",
+    name: "pin",
     version: "1.0.0",
-    permission: 0,
+    permission: 2,
     credits: "Emon",
     description: "image search",
     prefix: 'awto',
@@ -20,7 +20,7 @@ module.exports.run = async function({ api, event, args }) {
 
     const keySearch = args.join(" ");
 
-    if(keySearch.includes("-") == false) return api.sendMessage('Please enter in the format, example: pinterest cat - 10 (it depends on you how many images you want to appear in the result)', event.threadID, event.messageID)
+    if(keySearch.includes("-") == false) return api.sendMessage('Please enter in the format, example: pinterest cat - 20 (it depends on you how many images you want to appear in the result)', event.threadID, event.messageID)
 
     const keySearchs = keySearch.substr(0, keySearch.indexOf('-'))
 

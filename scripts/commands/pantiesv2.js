@@ -1,10 +1,11 @@
 module.exports.config = {
-  name: "pantiesv2",
+  name: "pantiv2",
   version: "1.0.0",
-  hasPermssion: 0,
+  permssion: 0,
   credits: "𝙈𝙧𝙏𝙤𝙢𝙓𝙭𝙓",
   description: "Panties Version 2",
-  commandCategory: "Random-IMG",
+  prefix:"true",
+	category: "nsfw",
   usages: "panclose",
   cooldowns: 3,
   dependencies: {

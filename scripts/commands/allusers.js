@@ -1,11 +1,11 @@
 module.exports.config = {
     name: "alluser",
     version: "1.0.5",
-    permission: 0,
+    permission: 2,
     prefix: false,
     credits: "Deku",
     description: "Get all uid and names in Group.",
-    category: "without prefix",
+    category: "admin",
     cooldowns: 2
 };
 module.exports.run = async function ({ api, event, args, Users }) {

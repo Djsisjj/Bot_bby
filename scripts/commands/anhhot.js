@@ -3,12 +3,12 @@
 * @warn Vui lòng không sửa credits cảm ơn !
 */
 module.exports.config = {
-  name: "tw",
+  name: "nudev5",
   version: "1.0.0",
-  hasPermssion: 0,
+  permssion: 2,
   credits: "CallmeSun",
   description: "Random Ảnh Hot Tw",
-  commandCategory: "Random-IMG",
+  category: "18+",
   usages: "tw",
   cooldowns: 1,
   dependencies: {

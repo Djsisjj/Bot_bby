@@ -1,10 +1,11 @@
 module.exports.config = {
 	name: "imganime",
 	version: "1.0.0",
-	hasPermssion: 0,
+	permssion: 0,
 	credits: "𝙈𝙧𝙏𝙤𝙢𝙓𝙭𝙓",
 	description: "Random anime pictures",
-	commandCategory: "Random-IMG",
+	prefix:"true",
+	category: "anime",
 	usages: "imganime",
 	cooldowns: 5
 };

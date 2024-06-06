@@ -1,11 +1,11 @@
 module.exports.config = {
-	name: "nude2",
+	name: "nudev2",
 	version: "1.0.0",
 	permssion: 2,
 	credits: "MrTomXxX",
 	description: "Random nude photo extreme burns eyes 18+",
 	prefix:"true",
-	category: "nsfw",
+	category: "random-img",
 	usages: "anhnude",
 	cooldowns: 2
 };

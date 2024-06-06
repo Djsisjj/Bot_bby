@@ -3,7 +3,7 @@ module.exports.config = {
   version: "1.0.0", 
   permission: 0,
   credits: "EMon-BHai",
-  prefix: 'awto',
+  prefix: 'true',
   description: "Random Anime video",
   category: "Media", 
   usages: "user", 

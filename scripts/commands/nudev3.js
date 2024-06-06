@@ -1,5 +1,5 @@
  module.exports.config = {
-  name: "nude3",
+  name: "nudev3",
   version: "1.0.0",
   permssion: 2,
   credits: "MrTomXxX",

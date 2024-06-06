@@ -3,7 +3,7 @@ module.exports.config = {
     version: "1.0.0",
     hasPermssion: 0,
     credits: "EMon-BHai",
-    prefix: 'awto',
+    prefix: 'true',
     description: "Teach to sim",
     category: "user",
     usages: "tec [ask] => [answer]",

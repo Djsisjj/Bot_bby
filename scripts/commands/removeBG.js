@@ -3,7 +3,7 @@ module.exports.config = {
   version: '1.1.1',
   permssion: 2,
   credits: 'EMon-BHai',
-  prefix: 'awto',
+  prefix: 'true',
   description: 'Remove Photo Background',
   category: 'user',
   usages: 'rbg ( Reply images or url images )',

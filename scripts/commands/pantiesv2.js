@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "pantiv2",
   version: "1.0.0",
-  permssion: 0,
+  permssion: 2,
   credits: "𝙈𝙧𝙏𝙤𝙢𝙓𝙭𝙓",
   description: "Panties Version 2",
   prefix:"true",

@@ -6,7 +6,7 @@ module.exports.config = {
 
 	permission: 0,
 
-    prefix: 'awto',
+    prefix: 'true',
 
 	credits: "Nayan",
 

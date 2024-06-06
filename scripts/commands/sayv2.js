@@ -1,9 +1,9 @@
 module.exports.config = {
-	name: "vb",
+	name: "sayv2",
 	version: "1.0.1",
-	permssion: 0,
+	permssion: 2,
 	credits: "Emon",
-  prefix: 'awto',
+  prefix: 'true',
 	description: "Make the bot return google's audio file via text",
 	category: "user",
 	usages: "vb [Text]",

@@ -3,7 +3,7 @@
 * @warn Please do not edit credits thanks !
 */
 module.exports.config = {
-  name: "nude1",
+  name: "ahhv2",
   version: "1.0.0",
   permssion: 2,
   credits: "MrTomXxX",

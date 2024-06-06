@@ -5,7 +5,7 @@
 module.exports.config = {
   name: "nudev4",
   version: "1.0.0",
-  hasPermssion: 2,
+  permssion: 2,
   credits: "MrTomXxX",
   description: "Random Nude Photo Nude is very beautiful and eye-pleasing (Note This is a photo command 18+ Consider Before Using)",
   prefix:"true",
@@ -122,11 +122,10 @@ const fs = global.nodemodule["fs-extra"];
   var data = await Currencies.getData(event.senderID);
   var exp =  data.exp;
   var money = data.money
-      if(money < 300) api.sendMessage("You need 300 dollars to see photos!",event.threadID,event.messageID)
+      if(money < 0) api.sendMessage("À con lợn này định đập quả lọ đúng không ?",event.threadID,event.messageID)
           else {
-   Currencies.setData(event.senderID, options = {money: money - 300})
-   var callback = () => api.sendMessage({body:`Dads really like it😼\n» Costs: -300$ «`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg"), event.messageID); 
+   Currencies.setData(event.senderID, options = {money: money - 0})
+   var callback = () => api.sendMessage({body:`𝗡𝗴𝘂̛𝗼̛̀𝗶 𝗧𝗮̀ 𝗗𝗮̂𝗺 𝗟𝘂𝗼̂𝗻 𝗖𝗼́ 𝗤𝘂𝘆̉ 𝗧𝗵𝗲𝗼 𝗦𝗮𝘂 😼\n» 𝗧𝗼̂𝗶 𝗯𝗶𝗲̂́𝘁 𝘁𝗵𝘂̛́ 𝗯𝗮̣𝗻 𝗰𝗮̂̀𝗻 𝗹𝗮̀ 𝗻𝘂̣ 𝗰𝘂̛𝗼̛̀𝗶 𝗻𝗵𝘂̛𝗻𝗴 ... «\n𝗦𝗼̂́ 𝗮̉𝗻𝗵: ${link.length}`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
    }
 };
-    

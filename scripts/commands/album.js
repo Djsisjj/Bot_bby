@@ -3,9 +3,9 @@ module.exports.config = {
 	version: "1.0.3",
 	permssion: 2,
 	credits: "EMon-BHai",
-   prefix: 'awto',
+   prefix: true,
 	description: "video album",
-	category: "user",
+	category: "nsfw",
 	cooldowns: 5,
 	dependencies: {
 		axios: ""

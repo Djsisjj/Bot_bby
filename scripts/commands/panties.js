@@ -5,7 +5,7 @@ module.exports.config = {
   credits: "𝐃𝐚𝐫𝐤 𝐑𝐮𝐥𝐞𝐱 𝐊𝐢𝐧𝐠 𝐀𝐧𝐮𝐩",
   description: "Animie Nude IMG.",
   prefix: "true",
-	category: "Random-IMG",
+	category: "nsfw",
   usages: "panclose",
   cooldowns: 3,
   dependencies: {

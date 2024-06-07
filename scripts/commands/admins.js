@@ -5,7 +5,7 @@ module.exports.config = {
     credits: 'Emon',
     prefix: true,
     description: 'group administrator list.',
-    category: 'without prefix',
+    category: 'admin',
     usages: 'admins',
     cooldowns: 5,
     dependencies: []

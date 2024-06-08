@@ -22,7 +22,7 @@ module.exports.run = async ({ api, event, Currencies }) => {
             attachment: fs.createReadStream(__dirname + '/cache/trai.jpg')
           }, event.threadID, () => fs.unlinkSync(__dirname + '/cache/trai.jpg'), event.messageID);
         };
-        request(res.data.data).pipe(fs.createWriteStream(__dirname + '/cache/trai.jpg')).on("close", callback).then(Currencies.setData(event.senderID, options = {money: money - 1000}));
+        request(res.data.data).pipe(fs.createWriteStream(__dirname + '/cache/trai.jpg')).on("close", callback).then(Currencies.setData(event.senderID, options = {money: money - 0}));
       })
-  } else return api.sendMessage("Bạn cần 1000 đô để xem ảnh ?",event.threadID,event.messageID);
+  } else return api.sendMessage("Bạn cần 0 đô để xem ảnh ?",event.threadID,event.messageID);
 }

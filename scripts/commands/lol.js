@@ -1,10 +1,11 @@
 module.exports.config = {
     name: "lol",
     version: "4.3.7",
-    hasPermssion: 0,
+    permssion: 0,
     credits: "ProCoderMew",
     description: "Chat cùng con sim mất dạy nhất",
-    commandCategory: "General",
+    prefix:"true",
+    category: "General",
     usages: "[args]",
     cooldowns: 5,
     dependencies: {

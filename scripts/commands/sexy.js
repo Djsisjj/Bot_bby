@@ -15,7 +15,7 @@ module.exports.run = async ({ api, event, Currencies }) => {
   const request = require('request');
   const fs = require("fs");
   var money = (await Currencies.getData(event.senderID)).money
-  if (money >= 1000) {
+  if (money >= 0) {
     axios.get('http://api.vangbanlanhat.tk/image?type=sexy').then(res => {
     var callback = function () {
           api.sendMessage({

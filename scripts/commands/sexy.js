@@ -5,7 +5,7 @@ module.exports.config = {
   credits: "VĐT&NTH với sự Sp của DũngUwU",
   description: "Random ảnh sexy có phí",
   prefix:"true",
-  category: nsfw",
+  category: "nsfw",
   usages: "sexy",
   cooldowns: 3
 };

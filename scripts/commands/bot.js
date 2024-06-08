@@ -13,7 +13,7 @@ const lang = "bn";
 
 module.exports.config = {
   name: "bot",
-  version: "0.0.4",
+  version: "1.0.0",
   permission: 0,
   prefix: false,
   credits: "Nayan",

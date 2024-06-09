@@ -4,6 +4,7 @@ module.exports.config = {
   permssion: 2,
   credits: "HungCho",
   description: "Random ảnh girl",
+  prefix:"true",
   category: "nsfw",
   usages: "Magibaz",
   cooldowns: 5,

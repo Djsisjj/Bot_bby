@@ -8,7 +8,7 @@ module.exports.config = {
   version: "1.0.0",
   permssion: 0,
   credits: "EMon-BHai",
-  prefix: 'awto',
+  prefix: 'false',
   description: "Dont Change This Credits Otherwisw Your Bot Lol",
   usages: "sim (ask) reply simsimi",
   category: "admin",

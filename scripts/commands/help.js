@@ -4,7 +4,7 @@ module.exports.config = {
   permission: 0,
   credits: "EMon-BHai",
   description: "beginner's guide",
-  prefix: 'awto',
+  prefix: 'true',
   category: "user",
   usages: "help [command name]",
   cooldowns: 5,

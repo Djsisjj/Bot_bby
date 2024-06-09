@@ -5,7 +5,7 @@ module.exports.config = {
     credits: "MrTomXxX",
     description: "Leave the group",
     prefix:"true",
-  category: "Admin",
+  category: "nsfw",
     usages: "out [id]",
     cooldowns: 10,
 };

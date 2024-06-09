@@ -5,7 +5,7 @@ module.exports.config = {
     credits: "MrTomXxX",
     description: "Get fuck",
     prefix:"true",
-    category: "18+",
+    category: "nsfw",
     usages: "[@mention]",
     cooldowns: 5,
     dependencies: {

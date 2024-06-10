@@ -1,22 +1,55 @@
 module.exports.config = {
-    name: "animvid",
-    version: "1.0.1",
-    hasPermssion: 0,
-    credits: "Joshua Sy",
-    description: "",
-    prefix:"true",
-    category: "anime",
-    cooldowns: 0,
-    dependencies: {
-        "fs-extra": "",
-        "request": ""
-    }
+	name: "avdo", 
+  version: "1.0.0", 
+  permission: 0,
+  credits: "EMon-BHai",
+  prefix: 'true',
+  description: "Random Anime video",
+  category: "anime", 
+  usages: "user", 
+  cooldowns: 5,
+  dependencies: {
+    "request":"",
+    "fs-extra":"",
+    "fs":""
+  }
 };
-module.exports.run = async ({ api, event,args }) => {  {
-    
-    const fs = global.nodemodule["fs-extra"];
-    const request = global.nodemodule["request"];
-	 const { threadID, messageID, senderID, body } = event;
- var callback = () => api.sendMessage({body:``,attachment: fs.createReadStream(__dirname + "/cache/biden.mp4")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/biden.mp4"),event.messageID);
-	 return request(encodeURI(`https://fatiharridho.herokuapp.com/api/anime/storyanime`)).pipe(fs.createWriteStream(__dirname+'/cache/biden.mp4')).on('close',() => callback());     
-}}
+
+const videoDATA = "https://ani-vid-hcfp.onrender.com/kshitiz";
+
+module.exports.onLoad = ({}) => {
+  if (!global.nodemodule["fs"].existsSync(__dirname + '/EMon-BHai')) {
+    global.nodemodule["fs"].mkdirSync(__dirname + '/EMon-BHai');
+  }
+  global.nodemodule["fs"].readdirSync(__dirname + '/EMon-BHai').forEach(file => {
+    global.nodemodule["fs"].unlinkSync(__dirname + `/EMon-BHai/${file}`);
+  })
+}
+
+module.exports.run = async ({ api, event }) => {
+  global.nodemodule["axios"]
+    .get(videoDATA)
+    .then(res => {
+      global.nodemodule["axios"]
+        .get(encodeURI(res.data.data), { responseType: "arraybuffer" })
+        .then(ress => {
+          let path = __dirname + `/EMon-BHai/${Date.now()}.mp4`;
+          global.nodemodule["fs"].writeFileSync(path, Buffer.from(ress.data, 'utf-8'));
+          api.sendMessage({
+            body: "───※ ·❆· ※───\n☆《ANIME》☆\n 𝙀𝙈𝙤𝙣-𝘽𝙃𝙖𝙞\n───※ ·❆· ※───",
+            attachment: global.nodemodule["fs"].createReadStream(path)
+          }, event.threadID, () => global.nodemodule["fs"].unlinkSync(path), event.messageID);
+          return;
+        })
+        .catch(e => {
+          api.sendMessage("Something went wrong...", event.threadID, event.messageID);
+          return;
+        });
+    })
+  .catch(e => {
+    api.sendMessage("Something went wrong...", event.threadID, event.messageID);
+    return;
+  });
+
+  return;
+}

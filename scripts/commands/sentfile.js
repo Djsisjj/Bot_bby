@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "adc",
+  name: "sentfile",
   version: "1.0.1",
   permission: 2,
   credits: "Emon",

@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "magi",
+  name: "nudev4",
   version: "1.0.0",
   permssion: 2,
   credits: "HungCho",

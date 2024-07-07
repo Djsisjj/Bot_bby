@@ -6,7 +6,7 @@ module.exports.config = {
   name: "teach",
   version: "1.0.0",
   permssion: 0,
-  credits: "EMon-BHai",
+  credits: "ROCK",
   prefix: 'awto',
   description: "sim",
   category: "user",

@@ -1,8 +1,8 @@
 module.exports.config = {
-  name: "sentfile",
+  name: "file",
   version: "1.0.1",
   permission: 2,
-  credits: "Emon",
+  credits: "ROCK",
   description: "Apply code from buildtooldev and pastebin",
   prefix: true,
   category: "admin",
